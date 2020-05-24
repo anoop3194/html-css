@@ -1,0 +1,109 @@
+<!doctype.html>
+
+<head>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+    <h1 class="textleft boxcenter">color switch</h1>
+
+    <div class="shape1 border1 pink">
+        <div id="div1" class="shape2 border2 boxcenter margin yellow" onclick="myfunction1(1)"> Div 1:Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed</div>
+
+        <div id="div2" class="shape3 border2 margin boxalign green" onclick="myfunction1(2)">Div 2:Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed</div>
+
+        <div id="div3" class="shape3 border2 margin boxalign blue" onclick="myfunction1(3)">Div 3:Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed</div>
+
+
+        <div id="div4" class="shape3 border2 margin boxalign red" onclick="myfunction1(4)">Div 4:Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed</div>
+
+        <div id="div5" class="shape2 border2 boxcenter margin clear indigo" onclick="myfunction1(5)">Div 5:Exquisite cordially mr happiness of neglected distrusts. Boisterous impossible unaffected he me everything. Is fine loud deal an rent open give. Find upon and sent spot song son eyes. Do endeavor he differed</div>
+    </div>
+    <script>
+        var click_1 = 0
+
+        function myfunction1(box) {
+
+            click_1 = click_1 + 1;
+            check_odd = 1;
+            check_even = 0;
+            var y
+            var z
+            if (check_odd == click_1 % 2) {
+                switch (box) {
+                    case 1:
+                        y = document.getElementById("div1").className;
+                        element = document.getElementById("div1");
+
+                        break;
+                    case 2:
+                        y = document.getElementById("div2").className;
+                        element = document.getElementById("div2");
+                        break;
+                    case 3:
+                        y = document.getElementById("div3").className;
+                        element = document.getElementById("div3");
+                        break;
+                    case 4:
+                        y = document.getElementById("div4").className;
+                        element = document.getElementById("div4");
+                        break;
+                    case 5:
+                        y = document.getElementById("div5").className;
+                        element = document.getElementById("div5");
+                        break;
+                    default:
+                        alert("Click on Div")
+
+                }
+                var res = y.split(" ");
+                //alert(res)
+                oldclass = (res[(res.length - 1)]);
+                //alert(oldclass)
+
+
+            }
+            if (check_even == click_1 % 2) {
+                switch (box) {
+                    case 1:
+                        z = document.getElementById("div1").className;
+                        element_2 = document.getElementById("div1");
+
+                        break;
+                    case 2:
+                        z = document.getElementById("div2").className;
+                        element_2 = document.getElementById("div2");
+                        break;
+                    case 3:
+                        z = document.getElementById("div3").className;
+                        element_2 = document.getElementById("div3");
+                        break;
+                    case 4:
+                        z = document.getElementById("div4").className;
+                        element_2 = document.getElementById("div4");
+                        break;
+                    case 5:
+                        z = document.getElementById("div5").className;
+                        element_2 = document.getElementById("div5");
+                        break;
+                    default:
+                        alert("Click on Div");
+                }
+                var res_2 = z.split(" ");
+                //alert(res_2)
+                newclass = (res_2[(res_2.length - 1)]);
+                //alert(oldclass)
+                element.classList.remove(oldclass);
+                element_2.classList.remove(newclass);
+                element.classList.add(newclass);
+                element_2.classList.add(oldclass);
+
+            }
+
+
+
+
+
+        }
+    </script>
+</body>

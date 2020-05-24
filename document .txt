@@ -1,0 +1,138 @@
+I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work.
+
+
+My strength is my flexibility to handle change. As a ETL developer i am able to manage a project on machine learning and deployed it sucessfully. 
+
+I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work.
+
+My strength is my flexibility to handle change. As a ETL developer i am able to manage a project on machine learning and deployed it successfully.
+
+I feel that my management skills could be stronger, and I am constantly working to improve them
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the array values after the split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "How are you doing today?";
+  var res = str.split(" ");
+  document.getElementById("demo").innerHTML = res[0];
+}
+</script>
+
+</body>
+</html>
+
+
+
+<p>Click the button to display the value of the class attribute of the div element below.</p>
+
+<div id="myDIV" class="mystyle">
+I am a DIV element with class="mystyle"
+</div>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("mystyle")[0].className;
+  var y = document.getElementById("myDIV").className;
+  document.getElementById("demo").innerHTML = "Using getElementsByClassName: " + x + "<br>" + "Using getElementById: " + y;
+}
+</script>
+
+</body>
+</html>
+
+
+document.getElementById("div1").className += " red";
+
+
+elseif(box == 2) {
+                var y = document.getElementById("div2").className
+                var res = y.split(" ");
+                oldclass = (res[res.length - 2]);
+                alert(oldclass)
+                oldclass = "red"
+
+                document.getElementById("div1").className += oldclass;
+            }
+            elseif(box == 3) {
+                var y = document.getElementById("div2").className
+                var res = y.split(" ");
+                oldclass = (res[res.length - 2]);
+                alert(oldclass)
+                oldclass = "red"
+
+                document.getElementById("div1").className += oldclass;
+            }
+            elseif(box == 4) {
+                var y = document.getElementById("div2").className
+                var res = y.split(" ");
+                oldclass = (res[res.length - 2]);
+                alert(oldclass)
+                oldclass = "red"
+
+                document.getElementById("div1").className += oldclass;
+            }
+            elseif(box == 5) {
+                var y = document.getElementById("div2").className
+                var res = y.split(" ");
+                oldclass = (res[res.length - 2]);
+                alert(oldclass)
+                oldclass = "red"
+
+                document.getElementById("div1").className += oldclass;
+            }
+
+if (box == 1 || box == 2 || box == 3) 
+            {
+                var y = document.getElementById("div1").className
+                var res = y.split(" ");
+                alert(res)
+                oldclass = (res[res.length - 2]);
+                alert(oldclass)
+                oldclass = "red "
+
+                document.getElementById("div1").className += oldclass;
+
+            }
+
+
+var y = " "
+            switch (box) {
+                case box == 1:
+                    y = document.getElementById("div1").className;
+                    alert(y)
+                    break;
+                case box == 2:
+                    y = document.getElementById("div2").className;
+                    break;
+                case box == 3:
+                    y = document.getElementById("div3").className;
+                    break;
+                case box == 4:
+                    y = document.getElementById("div4").className;
+                    break;
+                case box == 5:
+                    y = document.getElementById("div5").className;
+                    break;
+            }
+            alert(y)
+            var res = y.split(" ");
+            oldclass = (res[res.length - 2]);
+            alert(oldclass)
+            oldclass = "red"
+
+            document.getElementById("div1").className += oldclass;
